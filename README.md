@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/evserykh/signed_parameters.svg?branch=master)](https://travis-ci.org/evserykh/signed_parameters) [![Dependency Status](https://gemnasium.com/evserykh/signed_parameters.svg)](https://gemnasium.com/evserykh/signed_parameters)
+[![Build Status](https://travis-ci.org/evserykh/signed_parameters.svg?branch=master)](https://travis-ci.org/evserykh/signed_parameters) [![Dependency Status](https://gemnasium.com/evserykh/signed_parameters.svg)](https://gemnasium.com/evserykh/signed_parameters) [![Gem Version](https://badge.fury.io/rb/signed_parameters.svg)](http://badge.fury.io/rb/signed_parameters)
 ***
 # SignedParameters
 
