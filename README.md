@@ -60,9 +60,7 @@ So, for the data { :email => 'test@test.com', :username => 'John Smith', :age =>
 > SignedParameters.to_query(params, secret)
  => "age=66&email=test%40test.com&sign=0fc248b16df686b7fcb5c5dc9ce701d8&username=John+Smith"
 ```
-
 or
-
 ```ruby
 > builder = SignedParameters::Builder.new(params, secret)
  => #<SignedParameters::Builder:0x007f8f8835c770 @parameters={:email=>"test@test.com", :username=>"John Smith", :age=>66, :address=>""}, @secret="c5fc6b5cff2d52791ecaae659200de5e", @separator=";"> 
