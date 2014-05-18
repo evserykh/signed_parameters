@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/evserykh/signed_parameters.svg?branch=master)](https://travis-ci.org/evserykh/signed_parameters)
+***
 # SignedParameters
 
 Allow to sign data with secret key
