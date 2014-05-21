@@ -6,7 +6,7 @@ module SignedParameters
     Builder.new(parameters, secret).sign
   end
 
-  def self.parameters_with_sign(parameters, sign)
+  def self.parameters_with_sign(parameters, secret)
     Builder.new(parameters, secret).parameters_with_sign
   end
 
