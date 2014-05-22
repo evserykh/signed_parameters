@@ -13,12 +13,12 @@ Add this line to your application's Gemfile:
 And then execute:
 
     $ bundle
-    
+
 ##How it works
 
-Assume, the both sides know secret key, and one of them must send a data to another, and another side must receive the data and verify the data is signed with correct key. 
+Assume, the both sides know secret key, and one of them must send a data to another, and another side must receive the data and verify the data is signed with correct key.
 
-The sending side gets the sign and adds it to sending data, the receiving side does the same things with received data and compares obtained sign with received sign.    
+The sending side gets the sign and adds it to sending data, the receiving side does the same things with received data and compares obtained sign with received sign.
 
 ## Algorithm of computing of sign
 
@@ -52,24 +52,10 @@ Step 7. md5 = MD5(sha1)
 
 So, for the data { :email => 'test@test.com', :username => 'John Smith', :age => 66, :address => '' } the sign will be 0fc248b16df686b7fcb5c5dc9ce701d
 
-## Usage
-
-```ruby
-> params = { :email => 'test@test.com', :username => 'John Smith', :age => 66, :address => ''  }
- => {:email=>"test@test.com", :username=>"John Smith", :age=>66, :address=>""} 
-> secret = 'c5fc6b5cff2d52791ecaae659200de5e'
- => "c5fc6b5cff2d52791ecaae659200de5e" 
-> SignedParameters.to_query(params, secret)
- => "age=66&email=test%40test.com&sign=0fc248b16df686b7fcb5c5dc9ce701d8&username=John+Smith"
-```
-or
-```ruby
-> builder = SignedParameters::Builder.new(params, secret)
- => #<SignedParameters::Builder:0x007f8f8835c770 @parameters={:email=>"test@test.com", :username=>"John Smith", :age=>66, :address=>""}, @secret="c5fc6b5cff2d52791ecaae659200de5e", @separator=";"> 
-> builder.sign
- => "0fc248b16df686b7fcb5c5dc9ce701d8"
-```
-
+## Provided methods
+* SignedParameters.sign(parameters, secret)
+* SignedParameters.parameters_with_sign(parameters, secret)
+* SignedParameters.to_query(parameters, secret)
 
 ## Contributing
 
