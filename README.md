@@ -46,11 +46,11 @@ Step 4. [ 66, 'John Smith', 'test@test.com', 'c5fc6b5cff2d52791ecaae659200de5e' 
 
 Step 5. str = 66;John Smith;test@test.com;c5fc6b5cff2d52791ecaae659200de5e
 
-Step 6. sha1 = SHA1(str)
+Step 6. sha1 = SHA1(str) (f6e332862ebca74b0cb25d3818f6e41f5c92db66)
 
-Step 7. md5 = MD5(sha1)
+Step 7. md5 = MD5(sha1) (0fc248b16df686b7fcb5c5dc9ce701d8)
 
-So, for the data { :email => 'test@test.com', :username => 'John Smith', :age => 66, :address => '' } the sign will be 0fc248b16df686b7fcb5c5dc9ce701d
+So, for the data { :email => 'test@test.com', :username => 'John Smith', :age => 66, :address => '' } the sign will be 0fc248b16df686b7fcb5c5dc9ce701d8
 
 ## Provided methods
 * SignedParameters.sign(parameters, secret)
